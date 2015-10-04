@@ -1,0 +1,9 @@
+{
+  "name": "Messenger",
+  "version": "0.1",
+  "developer": "Flipbox Factory",
+  "developerUrl": "https://flipboxfactory.com/",
+  "components": {
+    "setting": "craft\\plugins\\messenger\\services\\Setting"
+  }
+}

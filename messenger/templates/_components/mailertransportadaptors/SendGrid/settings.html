@@ -1,0 +1,28 @@
+{% import "_includes/forms" as forms %}
+
+<p><em>To learn more about creating SendGrid SMTP User <a href="http://messenger.flipboxfactory.com/how-to/create-sendgrid-smtp-user">Click Here</a>.</em></p>
+
+{{ forms.textField({
+	label: "Username"|t('app'),
+	id: 'username',
+	name: 'username',
+	value: adaptor.username,
+	errors: adaptor.getErrors('username')
+}) }}
+
+{{ forms.passwordField({
+	label: "Password"|t('app'),
+	id: 'password',
+	name: 'password',
+	value: adaptor.password,
+	errors: adaptor.getErrors('password')
+}) }}
+
+{{ forms.textField({
+	label: "Timeout"|t('app'),
+	id: 'timeout',
+	name: 'timeout',
+	value: adaptor.timeout,
+	size: 2,
+	errors: adaptor.getErrors('timeout')
+}) }}
